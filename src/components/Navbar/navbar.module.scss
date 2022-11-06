@@ -1,0 +1,25 @@
+.navbar{
+  background-color: #3ad1f0;
+  .mainImage {
+    width: 186px;
+  }
+
+  .logo{
+    width: 196px;
+  }
+
+  .badge {
+    right: -15px;
+    top: -10px;
+  }
+
+  @media(max-width: 768px){
+    .mainImage{
+      width: 176px;
+    }
+  }
+
+}
+
+
+

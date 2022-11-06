@@ -1,0 +1,30 @@
+@mixin w($x){
+  width: $x;
+}
+
+.container {
+  @include w(100%);
+  .image{
+    @include w(100%);
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .container{
+    @include w(90%);
+  }
+}
+
+@media (min-width: 992px) {
+  .container{
+    @include w(70%);
+  }
+}
+
+@media (max-width: 576px) {
+  .image{
+    padding-left: 0.6rem;
+  }
+}
+

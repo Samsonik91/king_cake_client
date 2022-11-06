@@ -1,0 +1,26 @@
+.img{
+    width: 15%;
+    height: 6rem;
+}
+
+.cakeName {
+    width: 37%;
+}
+
+.feature {
+    width: 12%;
+}
+
+.details{
+    &:hover{
+      color: blue;
+    }
+}
+
+.iconDown {
+    padding-top: 0.15rem;
+}
+
+.iconUp {
+    padding-top: 0.25rem;
+}

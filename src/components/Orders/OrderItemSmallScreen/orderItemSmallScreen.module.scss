@@ -1,0 +1,35 @@
+.img{
+  object-fit: cover;
+}
+
+.number{
+  width: 15%;
+}
+
+.name{
+  width: 50%;
+}
+
+.date{
+  width: 35%;
+}
+
+.iconMini{
+  margin-bottom: -0.15rem;
+}
+
+.currency {
+  padding-top: 0.15rem;
+}
+
+@media (max-width: 576px){
+  .name{
+    width: 55%;
+  }
+  .date{
+    width: 35%;
+  }
+  .number{
+    width: 10%;
+  }
+}

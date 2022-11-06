@@ -1,0 +1,24 @@
+$h2: 2rem;
+
+@mixin h($h) {
+  height: $h
+}
+
+.title {
+  height: 1.5rem;
+}
+
+.lowerWideBlock {
+  @include h($h2);
+  width: 70%;
+}
+
+.lowerNarrowBlock {
+  @include h($h2);
+}
+
+.spinnerBlock {
+  top: 45%;
+  left: 45%;
+  fontSize: 1.25rem;
+}

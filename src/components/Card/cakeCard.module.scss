@@ -1,0 +1,49 @@
+@mixin w($x){
+  width: $x
+}
+
+@mixin h($x){
+  height: $x
+}
+
+.card{
+  @include w(100%);
+  position: relative;
+  border: 1px solid grey;
+  &:hover{
+    border: 1px solid blue;
+    transform: scale(1.02);
+  }
+  .img{
+    @include h(11rem);
+    object-fit: cover;
+  }
+  .link{
+    text-decoration: none;
+  }
+  .title{
+    @include h(3.3rem);
+    text-align: center;
+  }
+  .text{
+    @include h(4.5rem);
+  }
+  .delete{
+    position: absolute;
+    background-color: white;
+    top: -0.7rem;
+    right: -0.7rem;
+    overflow: hidden;
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .card{
+    .img {
+      @include h(16rem);
+    }
+  }
+}

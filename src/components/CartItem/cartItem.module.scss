@@ -1,0 +1,30 @@
+@mixin wh($w, $h){
+  width: $w;
+  height: $h;
+}
+
+.image{
+  @include wh(100%, 100%);
+  objectFit: cover;
+}
+
+.spinner{
+  @include wh(100%, 100%);
+}
+
+.delete{
+  &:hover{
+    color: red;
+  }
+}
+
+.blockDelete{
+  top: 1rem;
+  right: 1rem;
+}
+
+@media (max-width: 576px) {
+  .image {
+    @include wh(12rem, 12rem);
+  }
+}

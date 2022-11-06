@@ -1,0 +1,15 @@
+.container {
+  width: 80%;
+}
+
+@media (min-width: 768px){
+  .container{
+    width: 35%;
+  }
+}
+
+@media (min-width: 1200px){
+  .container{
+    width: 25%;
+  }
+}
